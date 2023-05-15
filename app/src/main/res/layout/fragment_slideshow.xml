@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:id="@+id/scanner_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_margin="50dp"
+            android:background="@drawable/edittextbackground"
+            android:gravity="center"
+            android:id="@+id/resultTv"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="" />
+
+        <Button
+            android:id="@+id/copy"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="50dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/ocean"
+            android:text="Copy to clipboard"
+             />
+
+
+    </LinearLayout>
+</LinearLayout>
